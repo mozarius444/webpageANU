@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div id="top_nav_wrap"> 
+        <div class="top_nav">  
+            <ul class="top_nav">
+                <li><a>Good afternoon, u7477084</a></li>
+            </ul>
+        </div>
+
+        
+            
+            </div>
+    </div>
+    
+    <div class = "timeCard">
+        <div class="wrapper">
+            <h2>
+              Timer
+            </h2>
+            
+            <p id="displayTime">
+              <span id="seconds">00</span> :
+              <span id="tens">00</span>
+            </p>
+            
+            <button id="button-start">Start</button>
+            <button id="button-stop">Stop</button>
+            <button id="button-reset">Reset</button>
+            <button id="button-lap">Lap</button> <!-- Add a button for lap -->
+          
+            <div id="lapTimes"></div> <!-- Area to display lap times -->
+          </div><!--end of wrapper-->
+          
+    </div>
+
+    
+<div id = "hozListWrap"> 
+    <div class="horizontal_list">
+        <h1 class="welcome_center"> Welcome to your desktop,</h1>
+        <h2><a id="date"></a><br><a id="time"></a><br><br></h2>
+        <ul>
+            <li><a href="https://wattlecourses.anu.edu.au/course/view.php?id=42654">Math1005</a></li>
+            <li><a href="https://wattlecourses.anu.edu.au/course/view.php?id=41584">COMP1100</a></li>
+            <li><a href="https://wattlecourses.anu.edu.au/course/view.php?id=41592">COMP1710</a></li>
+            <li><a href="https://wattlecourses.anu.edu.au/course/view.php?id=41892">COMP1730</a></li>
+            <li><a href="https://outlook.live.com/mail/0/">Outlook</a></li>
+            <br><br>
+
+            <h3> Textbooks</h3>
+            <li><a href="https://haskellbook.com/img/sample.pdf">Haskells</a></li>
+            <li><a href="https://anu.primo.exlibrisgroup.com/discovery/fulldisplay?vid=61ANU_INST:ANU&search_scope=MyInst_and_CI&tab=Everything&docid=alma991007799209707631&lang=en&context=PC&adaptor=Primo%20Central&query=any,contains,Discrete%20mathematics%20with%20applications%20Epp,%20Susanna%20S&virtualBrowse=true">Discrete mathematics, Epp, Susanna S.
+            </a></li>
+
+        </ul>
+    </div>
+
+
+
+
+
+
+
+</div>
+    <br><br><br><br><br>    <br><br><br><br><br>    <br><br>
+<div class = "calendar_wrap"> 
+    <iframe src="https://embed.styledcalendar.com/#nEkAbD8cQbuF9dGN65F1" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
+    <script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+<style>
+.timeCard {
+    position: fixed;
+    top: 20px; /* Adjust top position as needed */
+    right: 20px; /* Adjust right position as needed */
+    
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+
+    box-shadow: #46413B;
+    backdrop-filter: blur( 6.5px );
+    -webkit-backdrop-filter: blur( 6.5px );
+
+    border-color: #F7F7F5;
+    border-width: 10px;
+    background-color: #BEBBB6;
+}
+
+.timeCard button {
+    background-color: #BEBBB6; /* Adjust the opacity as needed */
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin: 15px 0; /* Adjust margin as needed */
+    font-family: 'Noto Sans Mono', monospace;
+    color: #020204; /* Text color */
+    padding:10px;
+}
+
+.timeCard button:hover {
+    background-color: #020204; /* Adjust the opacity as needed */
+    color: #F7F7F5; /* Text color on hover */
+    box-shadow: 4px 8px;
+}
+
+/* Your existing styles */
+.study_stopWatch {
+    margin-left: 1550px;
+    width: 300px;
+    height: 750px;
+    border-radius: 25;
+    border-color: black;
+    margin-bottom: -950px;
+}
+
+#hozListWrap {
+    margin-left: -100px;
+}
+
+.study_stopWatch{
+    margin-left: 1550px;
+    width:300px;
+    height:750px;
+    border-radius: 25;
+    border-color: black;
+    margin-bottom: -950px;
+}
+#hozListWrap{
+    margin-left: -100px;
+}
+
+.calendar_wrap {
+margin-left: -280px;
+}
+
+
+
+    /* Apply styles to the iframe */
+iframe {
+    border: 1px solid #ddd; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+    width: 100%; /* Make the iframe responsive */
+    max-width: 800px; /* Maximum width */
+    height: 600px; /* Fixed height */
+    margin: 20px auto 0; /* Center the iframe horizontally and add margin-top */
+    display: block; /* Ensure the iframe is displayed as a block element */
+}
+
+.mv-event-container {
+    background: none; /* sets the background to nothing */
+    border: 1px solid black; /* sets a 1px solid black border */
+}
+
+.fc-footer-toolbar.fc-toolbar {
+    display: none;
+}
+
+.fc-credit-button { 
+    display: none;
+}
+
+body {
+    margin: 0px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    background-color: #F7F7F5;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+    
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.welcome_center {
+    font-size: 55px;
+    margin-top: -100px;
+    width: 22ch;
+    animation: typing 3s steps(15), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: Poppins;
+}
+
+#top_nav_wrap {
+    margin-left: 0;
+}
+
+.top_nav {
+    padding: 10px 20px; /* Adjust the padding as needed */
+    padding-top: 50px;
+    padding-bottom: 75px;
+    padding-left: -5px;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    height: 30px;
+    width: 1350px;
+}
+
+.top_nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.top_nav ul li {
+    display: inline-block;
+    margin-right: 60px;
+    margin-top: 15px;
+}
+
+.top_nav ul li a {
+    color: #46413b;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #F7F7F5;
+    padding: 10px 20px; /* Adjust the padding as needed */
+}
+
+.top_nav ul li a:hover {
+    background-color: #BEBBB6;
+}
+
+.horizontal_list {
+    margin-top: 250px;
+    margin-left: 490px;
+}
+
+.horizontal_list ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal_list ul li {
+    display: inline-block;
+    margin-right: 20px;
+    box-shadow: 7.5 15px #666;
+}
+
+.horizontal_list ul li a {
+    color: #020204;
+    text-decoration: none;
+    background-color: #BEBBB6;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px #666;
+}
+
+.horizontal_list ul li a:hover {
+    background-color: #46413B;
+    color: #F7F7F5;
+}
+
+</style>
+
+<script>
+    $(document).ready(function() {
+        function updateTime() {
+            var now = new Date();
+
+            var hours = now.getHours();
+            var minutes = now.getMinutes();
+            var seconds = now.getSeconds();
+
+            // Add leading zeros if necessary
+            hours = ('0' + hours).slice(-2);
+            minutes = ('0' + minutes).slice(-2);
+            seconds = ('0' + seconds).slice(-2);
+
+            var timeString = hours + ':' + minutes + ':' + seconds;
+            $('#time').text(timeString);
+        }
+
+        function updateDate() {
+            var now = new Date();
+
+            var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            var day = days[now.getDay()];
+            var month = months[now.getMonth()];
+            var date = now.getDate();
+            var year = now.getFullYear();
+            var dateString = day + ', ' + month + ' ' + date + ', ' + year;
+            $('#date').text(dateString);
+        }
+
+        // Update time and date every second
+        setInterval(updateTime, 1000);
+        updateDate(); // Update date immediately
+    });
+
+
+    $(document).ready(function() {
+            const apiKey = 'bfa52ba2e65121ae85fbec596452a9af';
+            const city = 'Canberra';
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+            $.getJSON(apiUrl)
+                .done(function(data) {
+                    const weatherDescription = data.weather[0].description;
+                    const temperature = data.main.temp;
+                    const humidity = data.main.humidity;
+                    const windSpeed = data.wind.speed;
+
+                    const weatherInfo = `Weather in ${city}: ${weatherDescription}. Temperature: ${temperature}°C. Humidity: ${humidity}%. Wind Speed: ${windSpeed} m/s.`;
+
+                    $('#weather').text(weatherInfo);
+                })
+                .fail(function(jqxhr, textStatus, error) {
+                    const errorMessage = `Error fetching weather data: ${textStatus}, ${error}`;
+                    console.error(errorMessage);
+                    $('#weather').text('Error fetching weather data.');
+                });
+        });
+
+
+
+
+        window.onload = function() {
+    // Vars to access html elements
+    let seconds = 0;
+    let tens = 0;
+    let laps = []; // Array to store lap times
+
+    let appendTens = document.getElementById("tens");
+    let appendSeconds = document.getElementById("seconds");
+    let buttonStart = document.getElementById("button-start");
+    let buttonStop = document.getElementById("button-stop");
+    let buttonReset = document.getElementById("button-reset");
+    let buttonLap = document.getElementById("button-lap");
+    let lapTimesDisplay = document.getElementById("lapTimes");
+
+    let interval;
+
+    // Functions to start, stop, reset, and record lap times
+    buttonStart.onclick = function() {
+        clearInterval(interval);
+        interval = setInterval(startTimer, 10);
+    }
+
+    buttonStop.onclick = function() {
+        clearInterval(interval);
+    }
+
+    buttonReset.onclick = function() {
+        clearInterval(interval);
+        tens = 0;
+        seconds = 0;
+        laps = [];
+        appendTens.innerHTML = "00";
+        appendSeconds.innerHTML = "00";
+        lapTimesDisplay.innerHTML = ""; // Clear lap times display
+    }
+
+    buttonLap.onclick = function() {
+        laps.push(`${appendSeconds.innerHTML}:${appendTens.innerHTML}`);
+        updateLapTimes();
+    }
+
+    function startTimer() {
+        tens++;
+
+        if (tens <= 9) {
+            appendTens.innerHTML = "0" + tens;
+        }
+
+        if (tens > 9) {
+            appendTens.innerHTML = tens;
+        }
+
+        if (tens > 99) {
+            seconds++;
+            appendSeconds.innerHTML = "0" + seconds;
+            tens = 0;
+            appendTens.innerHTML = "0" + 0;
+        }
+
+        if (seconds > 9) {
+            appendSeconds.innerHTML = seconds;
+        }
+    }
+
+    function updateLapTimes() {
+        lapTimesDisplay.innerHTML = ""; // Clear previous lap times
+        laps.forEach((lap, index) => {
+            lapTimesDisplay.innerHTML += `Lap ${index + 1}: ${lap}<br>`;
+        });
+    }
+};
+
+
+</script>
+
